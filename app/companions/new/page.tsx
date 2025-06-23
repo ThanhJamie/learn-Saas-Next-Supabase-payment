@@ -1,3 +1,4 @@
+"use client"
 import CompanionForm from "@/components/CompanionForm";
 
 const newCompanions = () => {
