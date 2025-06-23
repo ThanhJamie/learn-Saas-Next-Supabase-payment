@@ -19,16 +19,16 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
-    <ClerkProvider appearance={{variables: { colorPrimary: "#FE5933" }}}>
-      <html lang="en" suppressHydrationWarning>
-        <body className={`${bricolage.variable} antialiased`}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${bricolage.variable} antialiased`}>
+        <ClerkProvider appearance={{variables: { colorPrimary: "#FE5933" }}}>
           <Navbar />
           {children}
-        </body>
-      </html>
-    </ClerkProvider>
-  );
+        </ClerkProvider>
+      </body>
+    </html>
+  )
 }
